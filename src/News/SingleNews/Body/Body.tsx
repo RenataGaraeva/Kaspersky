@@ -1,4 +1,5 @@
 import { IData_SnippetNews } from "../../../app/Types.tsx";
+import Title from "./Components/Title.tsx";
 
 interface Props {
   news: IData_SnippetNews
@@ -7,6 +8,9 @@ interface Props {
 export default function Body ({news}: Props) {
 
   return (
-    <>{news}</>
+    <>
+    <Title title = {news.TI} />
+
+    </>
   )
 }
