@@ -48,3 +48,8 @@ export const data = [
   ]
 }
 ]
+
+export const getFirstLetterCapital = (word: string) => {
+  return word.trim()[0].toLocaleUpperCase() +
+    word.trim().slice(1, word.length).toLocaleLowerCase();
+};
