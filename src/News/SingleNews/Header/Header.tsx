@@ -1,4 +1,5 @@
 import { IData_SnippetNews } from "../../../app/Types.tsx";
+import DATE from "./Components/Date.tsx";
 
 interface Props {
   news: IData_SnippetNews
@@ -7,6 +8,6 @@ interface Props {
 export default function Header ({news}: Props) {
 
   return (
-<>{news}</>
+   <DATE newsDate={news.DP} />
   )
 }
