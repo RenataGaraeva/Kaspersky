@@ -3,6 +3,7 @@ import DATE from "./Components/Date.tsx";
 import Reach from "./Components/Reach.tsx";
 import Traffic from "./Components/Traffic.tsx";
 import Sent from "./Components/Sent.tsx";
+import Icons from "./Components/Icons.tsx";
 
 interface Props {
   news: IData_SnippetNews
@@ -16,6 +17,7 @@ export default function Header ({news}: Props) {
       <Reach reach={news.REACH}/>
       <Traffic traffic={news.TRAFFIC}/>
       <Sent sent={news.SENT} />
+      <Icons />
     </>
   )
 }
