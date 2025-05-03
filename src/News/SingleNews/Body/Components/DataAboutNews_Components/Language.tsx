@@ -1,5 +1,5 @@
 import { BookOutlined } from "@ant-design/icons";
-import {Typography } from "antd";
+import { Flex, Typography } from "antd";
 import { getFirstLetterCapital } from "../../../../../app/Const.tsx";
 
 
@@ -11,9 +11,9 @@ export default function Language({language}: Props) {
   return (
 
 
-    <>
-      <BookOutlined/>
+    <Flex gap={5}>
+      <BookOutlined style={{color: "grey"}}/>
       <Typography.Text type={'secondary'}>{getFirstLetterCapital(language)}</Typography.Text>
-    </>
+    </Flex>
   )
 }

@@ -14,7 +14,7 @@ export default function Traffic ({traffic}: Props) {
 
 
     <Flex gap={5} wrap={true} key={index}>
-      {traffic.value}
+     <Typography.Text type={"secondary"}> {traffic.value}</Typography.Text>
       <Typography>{getPercent(traffic.count)}</Typography>
     </Flex>
   ))}
