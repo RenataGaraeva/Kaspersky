@@ -11,7 +11,7 @@ export default function Body ({news}: Props) {
 
   return (
     <>
-    <Title title = {news.TI} />
+    <Title title = {news.TI}  />
       <DataAboutNews news={news}/>
       <Text news={news}/>
     </>

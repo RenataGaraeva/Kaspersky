@@ -1,5 +1,5 @@
 import {  UserOutlined } from "@ant-design/icons";
-import {Typography } from "antd";
+import { Flex, Typography } from "antd";
 
 interface Props {
   authors: string[];
@@ -35,9 +35,9 @@ export default function Authors({authors}: Props) {
   }
 
   return (
-    <>
+    <Flex gap={5}>
       <UserOutlined style={{color: "grey"}}/>
       <Typography.Text type={'secondary'}>{getAuthor(authors)}</Typography.Text>
-    </>
+    </Flex>
   )
 }

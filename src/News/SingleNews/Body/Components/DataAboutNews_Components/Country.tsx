@@ -1,4 +1,4 @@
-import {Typography } from "antd";
+import { Flex, Typography } from "antd";
 
 
 interface Props {
@@ -10,9 +10,9 @@ export default function Country ({country, src}: Props) {
   return (
 
 
-    <>
-      <img src={src} alt="country flag" style={{ color: 'grey' }} />
+    <Flex gap={5}>
+      <img src={src} alt="country flag" style={{color: 'grey'}} />
       <Typography.Text type={'secondary'}>{country}</Typography.Text>
-    </>
+    </Flex>
   )
 }

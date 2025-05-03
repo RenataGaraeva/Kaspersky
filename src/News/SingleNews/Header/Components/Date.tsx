@@ -13,7 +13,7 @@ export default function DATE ({newsDate}: Props) {
     const year = date.getFullYear();
 
     return (
-      <Flex>
+      <Flex gap={5} wrap={true}>
         <Typography>{day}</Typography>
         <Typography.Text type={"secondary"}>{month}</Typography.Text>
         <Typography.Text type={"secondary"}>{year}</Typography.Text>
