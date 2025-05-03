@@ -18,7 +18,7 @@ export default function News() {
   }, [newsStatus, dispatch])
 
   return (
-    <Row justify={"center"} align={"middle"} >
+    <Row justify={"center"} align={"middle"} className="news">
       <Col xs={22} sm={22} md={22} lg={16} xl={12}>
         <Flex vertical={true} wrap={true} align={'center'} >
           {news.map((news: IData_SnippetNews) => (

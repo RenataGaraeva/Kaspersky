@@ -10,7 +10,7 @@ export default function Source ({source}: Props) {
 return (
 
 <Flex gap={5}>
-  <GlobalOutlined/>
+  <GlobalOutlined style={{color: "grey"}}/>
   <Link>
     {source}</Link>
 </Flex>
