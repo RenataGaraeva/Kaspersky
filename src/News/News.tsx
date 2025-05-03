@@ -6,18 +6,18 @@ import { fetchPosts, selectAllNews, selectNewsStatus } from "../API/NewsSlice.ts
 import { useEffect } from "react";
 
 export default function News() {
+
   const dispatch = useAppDispatch()
   const news = useAppSelector(selectAllNews)
   const newsStatus = useAppSelector(selectNewsStatus)
-
 
   useEffect(() => {
     if (newsStatus === 'idle') {
       dispatch(fetchPosts())
     }
   }, [newsStatus, dispatch])
-  return (
 
+  return (
     <Row justify={"center"} align={"middle"} >
       <Col xs={22} sm={22} md={22} lg={16} xl={12}>
         <Flex vertical={true} wrap={true} align={'center'} >
@@ -27,6 +27,5 @@ export default function News() {
         </Flex>
       </Col>
     </Row>
-
   );
 }

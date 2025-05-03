@@ -7,10 +7,11 @@ import Body from "./Body/Body.tsx";
 interface Props {
 news: IData_SnippetNews
 }
+
 export default function SingleNews ({news}: Props){
 
   return (
-    <Card>
+    <Card className="singleNews">
       <Flex key={news.ID}  wrap={true} vertical={true} gap={"middle"}>
         <Header news={news} />
         <Body news={news} />

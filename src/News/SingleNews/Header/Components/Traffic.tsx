@@ -8,7 +8,7 @@ export default function Traffic ({traffic}: Props) {
   const getPercent = (count: number) => Math.floor(count * 100) + '%';
 
   return (
-    <>
+    <Flex gap={5}>
     <Typography.Text type={"secondary"}>Top Traffic:</Typography.Text>
   {traffic.map((traffic, index) => (
 
@@ -18,6 +18,6 @@ export default function Traffic ({traffic}: Props) {
       <Typography>{getPercent(traffic.count)}</Typography>
     </Flex>
   ))}
-    </>
+    </Flex>
   )
 }
