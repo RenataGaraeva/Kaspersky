@@ -1,4 +1,4 @@
-export const data =   {
+export const data = {
   ID: 260855433,
   TI: "Mobile bankers left vulnerable: 47% of UK consumers manage finances on insecure smartphones",
   AB: "Mobile bankers left vulnerable: 47% of UK consumers manage finances on insecure smartphones\nAugust 2020 by Kaspersky\nNew research has revealed that UK consumers carry out online banking on smartphones and devices that are potentially vulnerable to a security breach, despite making sure they keep their desktop or laptop computers safe. In a study commissioned by Kaspersky, nearly half (47%) of smartphone owners who use a banking app don't protect their mobile device with antivirus or security sof...",
@@ -44,10 +44,12 @@ export const data =   {
       value: "Mexico",
       count: 0.036,
     },
-  ]
-}
+  ],
+};
 
 export const getFirstLetterCapital = (word: string) => {
-  return word.trim()[0].toLocaleUpperCase() +
-    word.trim().slice(1, word.length).toLocaleLowerCase();
+  return (
+    word.trim()[0].toLocaleUpperCase() +
+    word.trim().slice(1, word.length).toLocaleLowerCase()
+  );
 };

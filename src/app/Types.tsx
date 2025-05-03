@@ -29,30 +29,29 @@ export interface IData_TrafficItem {
 
 export interface News {
   news: {
-    ID: number
-    TI: string
-    AB: string
-    URL: string
-    DP: string
-    DOM: string
-    SENT: string
-    LANG: string
-    AU: string[],
-    FAV: string
+    ID: number;
+    TI: string;
+    AB: string;
+    URL: string;
+    DP: string;
+    DOM: string;
+    SENT: string;
+    LANG: string;
+    AU: string[];
+    FAV: string;
     KW: {
-      value: string
-      count: number
-    }[]
-    HIGHLIGHTS: string[]
-    REACH: number
-    CNTR: string
-    CNTR_CODE: string
-    TRAFFIC:
-      {
-        value: string
-        count: number
-      }[]
-  }[]
-  status: 'idle' | 'pending' | 'succeeded' | 'rejected'
-  error: string | null
+      value: string;
+      count: number;
+    }[];
+    HIGHLIGHTS: string[];
+    REACH: number;
+    CNTR: string;
+    CNTR_CODE: string;
+    TRAFFIC: {
+      value: string;
+      count: number;
+    }[];
+  }[];
+  status: "idle" | "pending" | "succeeded" | "rejected";
+  error: string | null;
 }

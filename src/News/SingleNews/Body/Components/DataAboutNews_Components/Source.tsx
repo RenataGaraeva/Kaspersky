@@ -6,13 +6,11 @@ interface Props {
   source: string;
 }
 
-export default function Source ({source}: Props) {
-return (
-
-<Flex gap={5}>
-  <GlobalOutlined style={{color: "grey"}}/>
-  <Link>
-    {source}</Link>
-</Flex>
-)
+export default function Source({ source }: Props) {
+  return (
+    <Flex gap={5}>
+      <GlobalOutlined style={{ color: "grey" }} />
+      <Link>{source}</Link>
+    </Flex>
+  );
 }

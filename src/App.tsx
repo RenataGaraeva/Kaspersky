@@ -1,35 +1,32 @@
-import News from './News/News'
-import { ConfigProvider} from "antd";
+import News from "./News/News";
+import { ConfigProvider } from "antd";
 
 function App() {
-
   return (
     <>
       <ConfigProvider
         theme={{
           components: {
             Typography: {
-              colorText: 'white',
-              colorTextDescription: 'grey',
-              colorLink: '#1890ff',
-
+              colorText: "white",
+              colorTextDescription: "grey",
+              colorLink: "#1890ff",
             },
             Tag: {
-              defaultBg: 'black',
-              colorBorder: 'grey',
-              borderRadiusSM: 12
-
+              defaultBg: "black",
+              colorBorder: "grey",
+              borderRadiusSM: 12,
             },
             Card: {
-              colorBgContainer: 'black'
-            }
-          }
+              colorBgContainer: "black",
+            },
+          },
         }}
       >
-        <News/>
+        <News />
       </ConfigProvider>
     </>
-  )
+  );
 }
 
-export default App
+export default App;

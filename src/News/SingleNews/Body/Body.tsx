@@ -4,16 +4,15 @@ import DataAboutNews from "./Components/DataAboutNews.tsx";
 import Text from "./Components/Text.tsx";
 
 interface Props {
-  news: IData_SnippetNews
+  news: IData_SnippetNews;
 }
 
-export default function Body ({news}: Props) {
-
+export default function Body({ news }: Props) {
   return (
     <>
-    <Title title = {news.TI}  />
-      <DataAboutNews news={news}/>
-      <Text news={news}/>
+      <Title title={news.TI} />
+      <DataAboutNews news={news} />
+      <Text news={news} />
     </>
-  )
+  );
 }

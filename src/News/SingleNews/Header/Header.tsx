@@ -7,22 +7,21 @@ import Icons from "./Components/Icons.tsx";
 import { Flex } from "antd";
 
 interface Props {
-  news: IData_SnippetNews
+  news: IData_SnippetNews;
 }
 
-export default function Header ({news}: Props) {
-
+export default function Header({ news }: Props) {
   return (
     <Flex vertical={false} justify={"space-between"} gap={"small"} wrap={true}>
       <Flex vertical={false} gap={"large"} wrap={true}>
-   <DATE newsDate={news.DP} />
-      <Reach reach={news.REACH}/>
-      <Traffic traffic={news.TRAFFIC}/>
+        <DATE newsDate={news.DP} />
+        <Reach reach={news.REACH} />
+        <Traffic traffic={news.TRAFFIC} />
       </Flex>
       <Flex>
-      <Sent sent={news.SENT} />
-      <Icons />
+        <Sent sent={news.SENT} />
+        <Icons />
       </Flex>
     </Flex>
-  )
+  );
 }

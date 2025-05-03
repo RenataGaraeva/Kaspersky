@@ -8,14 +8,13 @@ import { Flex } from "antd";
 interface Props {
   news: IData_SnippetNews;
 }
-export default function DataAboutNews ({news}: Props) {
-
+export default function DataAboutNews({ news }: Props) {
   return (
     <Flex wrap={true} gap={"large"}>
-    <Source source= {news.DOM}/>
-     <Country country={news.CNTR} src={news.FAV} />
+      <Source source={news.DOM} />
+      <Country country={news.CNTR} src={news.FAV} />
       <Language language={news.LANG} />
       <Authors authors={news.AU} />
     </Flex>
-  )
+  );
 }
